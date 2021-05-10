@@ -1,19 +1,9 @@
-//const express = require('express');
-//const mongoose = require('mongoose');
-//const requireDir = require('require-dir');
-//const cors = require('cors');
-//var http = require('http');
-//const path = require("path");
+export default (req, res) => {
 
-require('dotenv').config()
-
-
-
-
-export default function (req, res) {
-  
-  
+  require('dotenv').config()
   let nodemailer = require('nodemailer')
+
+  
   const transporter = nodemailer.createTransport({
     port: 465,
     host: "smtp.gmail.com",
@@ -32,14 +22,14 @@ export default function (req, res) {
     html: `<div>${req.body.message}</div><p>Enviado por: ${req.body.email}</p>`
   }
 
-  transporter.sendMail(mailData, function (err, info) {
-    if (err)
-      console.log(err)
-    else
-      console.log(info)
-      res.send('success')
-  })
-
-  //console.log(req.body)
-  
+  transporter.sendMail(mailData, (err, data) => {
+    if (err) {
+      console.log(err);
+      res.send("error" + JSON.stringify(err));
+    } else {
+      console.log("mail send");
+      res.send("success");
+    }
+  });
 }
+
