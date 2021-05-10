@@ -35,14 +35,7 @@ export default function Projects({ projects }) {
 }
 
 
-export async function getStaticPaths() {
-    const paths = []
-    return { paths, fallback: 'blocking' };
-};
-
-
 export async function getStaticProps({ params }) {
-    //console.log(projects)
     return {
         props: {
             projects: projects,

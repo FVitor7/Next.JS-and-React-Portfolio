@@ -7,7 +7,7 @@ export default function Certificates({ certificates }) {
     return (
         <>
             <div className="certificatesPage">
-                <HeaderPage url_back={'/'}/>
+                <HeaderPage url_back={'/'} />
                 <main>
                     <Title title={'Certificados'} />
                     <section>
@@ -26,7 +26,6 @@ export default function Certificates({ certificates }) {
                         })
                         }
                     </section>
-
                 </main>
             </div>
         </>
@@ -34,14 +33,7 @@ export default function Certificates({ certificates }) {
 }
 
 
-export async function getStaticPaths() {
-    const paths = []
-    return { paths, fallback: 'blocking' };
-};
-
-
 export async function getStaticProps({ params }) {
-    //console.log(certificates)
     return {
         props: {
             certificates: certificates,
