@@ -1,0 +1,97 @@
+.homepage {
+  height: 100vh;
+  width: auto;
+  margin-left: 0px;
+}
+
+.homeContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+  margin-left: 0px;
+  height: 60%;
+  width: auto;
+  margin: 0rem;
+}
+
+.homepage div h1 {
+  font-size: 2.5rem;
+  padding-top: 3rem;
+  margin-top: 0rem;
+}
+
+.homepage div h2 {
+  font-size: 1.8rem;
+  margin-top: 0rem;
+  & span {
+    font-size: 1.9rem;
+    color: #9466ff;
+  }
+}
+
+.homepage p {
+  font-size: 1.4rem;
+  color: #04d361;
+  padding-bottom: 2rem;
+}
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .homeContent {
+    padding: 4rem;
+    margin: 0;
+  }
+
+  .homepage div h1 {
+    font-size: 3.8rem;
+    margin: 0;
+  }
+  .homepage div h2 {
+    font-size: 4rem;
+    margin: 0;
+
+    & span {
+      font-size: 4.2rem;
+    }
+  }
+
+  .homepage p {
+    font-size: 3rem;
+    margin: 0;
+  }
+}

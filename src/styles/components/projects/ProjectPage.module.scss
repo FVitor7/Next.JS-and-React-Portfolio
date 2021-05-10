@@ -1,0 +1,42 @@
+.projectPage main {
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.projectPage h1 {
+    font-size: 1.5rem;
+}
+
+.projectPage h3 {
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fafafa;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    & span {
+        color: #04d361;
+    }
+}
+
+.projectPage h2 {
+    color: #9466ff;
+}
+
+.imgProject img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    border: 2px solid rgb(39, 39, 39);
+}
+
+@media only screen and (min-width: 1000px) {
+    .projectPage main {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .imgProject img {
+        padding: 4rem;
+    }
+}

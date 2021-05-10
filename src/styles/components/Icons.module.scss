@@ -1,0 +1,38 @@
+.icons {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-evenly;
+  .icon-holder {
+    .icon {
+      font-size: 2.8rem;
+      color: #a4acc4;
+      transition: all 0.4s ease-in-out;
+    }
+    .gh:hover {
+      color: rgba(212, 45, 212, 0.788);
+    }
+    .gm:hover {
+      //color: #BB001B;
+      color: red;
+    }
+    .ig:hover {
+      //color: #BB001B;
+      color: orange;
+    }
+    .wp:hover {
+      //color: #25D366;
+      color: green;
+    }
+
+    .in:hover {
+      //color: #2867B2;
+      color: blueviolet;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .icons {
+    margin-top: 1rem;
+  }
+}

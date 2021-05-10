@@ -1,0 +1,45 @@
+.headerPages {
+    height: 4.5rem;
+    padding: 0px 1.5rem;
+    width: 100%;
+    background: linear-gradient(180deg, #8257e6 0%, rgba(51, 51, 51, 0) 100%);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.headerPages div {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.headerPages div svg:first-child {
+    width: 30px;
+    height: 30px;
+}
+
+.headerPages div svg {
+    width: 45px;
+    height: 45px;
+}
+
+.headerPages div svg path {
+    fill: rgb(255, 255, 255);
+}
+
+@media only screen and (min-width: 1000px) {
+    .headerPages div {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .headerPages div svg:first-child {
+        width: 50px;
+        height: 50px;
+    }
+}

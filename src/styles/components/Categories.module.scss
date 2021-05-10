@@ -1,0 +1,41 @@
+.sidenav {
+  position: relative;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.sidenav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+.sidenav li {
+  flex: 1 0 60px;
+}
+.sidenav li a {
+  display: block;
+  min-width: 60px;
+  max-width: 100px;
+  background: #c5c5c5;
+  text-align: center;
+
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  transition: 0.1s ease-out;
+  margin: 0px 20px 0px 0;
+}
+
+.sidenav li a img {
+  height: 40px;
+  width: 40px;
+}
+
+.sidenav li a:hover {
+  background: #b07dfb;
+}
+.sidenav li a:active {
+  background: #b07dfb;
+}

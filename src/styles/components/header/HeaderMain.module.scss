@@ -1,0 +1,87 @@
+.aside {
+  background: linear-gradient(180deg, #8257e6 0%, rgba(51, 51, 51, 0) 100%);
+  mix-blend-mode: normal;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+  height: 10rem;
+  position: inherit;
+}
+
+.profileItens {
+  width: 100%;
+  text-align: left;
+}
+@media only screen and (min-width: 1000px) {
+  .profileItens {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.profileItens section {
+  margin-top: 0rem;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+
+.profileItens img {
+  margin-right: 1.5rem;
+  width: 90px;
+  height: 90px;
+  border: 5px solid transparent;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: #04d361 0px 0px 0px 4px;
+}
+
+.profileItens section div {
+  padding-top: 1.5rem;
+}
+
+.profileItens section div h3 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+
+.profileItens p {
+  font-size: 0.7rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.profileItens section:last-child {
+  //margin-bottom: 2rem;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.profileItens section svg {
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s ease 0s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.profileItens section a {
+  cursor: pointer;
+}
+
+.profileItens section svg path {
+  fill: rgb(255, 255, 255);
+}

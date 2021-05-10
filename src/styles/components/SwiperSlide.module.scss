@@ -1,0 +1,140 @@
+.swipeContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swipeContainer .swiper-slide {
+  overflow: hidden;
+  cursor: pointer;
+  width: 16rem;
+  height: 18rem;
+  transition: all 0.5s ease 0s;
+  place-self: center;
+  border-radius: 1.3rem;
+  border: 3px solid #8257e6;
+}
+
+@media only screen and (min-width: 1000px) {
+  .swipeContainer .swiper-slide {
+    width: 14rem;
+    height: 16rem;
+  }
+}
+
+.swipeImages {
+  height: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  :hover span {
+    opacity: 1;
+  }
+  //background: url(https://images.prismic.io/gb-portfolio/5b62267d-9eee-40f8-b2fe-085585883b9d_Screenshot_6.png?auto=compress,format) center center / cover no-repeat;
+}
+.swipeImages img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.swipeImages > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  &:hover > div {
+    opacity: 1;
+  }
+}
+
+.swipeImages > div div {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: linear-gradient(180deg, #8257e6 0%, rgba(51, 51, 51, 0.5) 100%);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.5s ease 0s;
+}
+
+.swipeImages h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+}
+
+.swipeImages span {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.swipeContainer .swiper-container {
+  height: 24rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .swipeContainer .swiper-container {
+    height: 24rem;
+  }
+}
+
+.swiper-container-pointer-events {
+  touch-action: pan-y;
+}
+
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 10;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}

@@ -1,0 +1,103 @@
+@import "./components/Home.module.scss";
+@import "./components/Icons.module.scss";
+@import "./components/header/HeaderMain.module.scss";
+@import "./components/Title.module.scss";
+@import "./components/About.module.scss";
+@import "./components/Skills.module.scss";
+@import "./components/SwiperSlide.module.scss";
+@import "./components/Categories.module.scss";
+@import "./components/Contact.module.scss";
+@import "./components/Footer.module.scss";
+@import "./components/header/HeaderPages.module.scss";
+@import "./components/projects/ProjectsPage.module.scss";
+@import "./components/projects/ProjectPage.module.scss";
+@import "./components/certificates/CertificatesPage.module.scss";
+@import "./components/certificates/CertificatePage.module.scss";
+
+//Colors Theme
+$background-color: #121214;
+$h1-color: #fafafa;
+$h2-color: #fafafa;
+$h3-color: #fafafa;
+$p-color: #fafafa;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+  background-color: $background-color;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  display: block;
+}
+
+div {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  color: $h1-color;
+}
+
+h2 {
+  color: $h2-color;
+}
+
+h3 {
+  color: $h3-color;
+}
+
+span {
+}
+
+p {
+  color: $p-color;
+}
+
+.main {
+  padding: 1.5rem;
+  margin-left: 0px;
+  width: auto;
+  margin: 0rem;
+  padding-top: 1rem;
+}
+
+.sectionsPage {
+  padding-bottom: 4rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .main {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .main {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .main {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
