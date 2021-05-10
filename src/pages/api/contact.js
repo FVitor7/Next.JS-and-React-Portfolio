@@ -1,6 +1,18 @@
-export default function (req, res) {
-  require('dotenv').config()
+//const express = require('express');
+//const mongoose = require('mongoose');
+//const requireDir = require('require-dir');
+//const cors = require('cors');
+//var http = require('http');
+//const path = require("path");
 
+require('dotenv').config()
+
+
+
+
+export default function (req, res) {
+  
+  
   let nodemailer = require('nodemailer')
   const transporter = nodemailer.createTransport({
     port: 465,
@@ -24,9 +36,10 @@ export default function (req, res) {
     if (err)
       console.log(err)
     else
-      console.log(info);
+      console.log(info)
+      res.send('success')
   })
 
-  console.log(req.body)
-  res.send('success')
+  //console.log(req.body)
+  
 }
