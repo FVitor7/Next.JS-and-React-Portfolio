@@ -13,7 +13,7 @@ export default function Project({ project }) {
         <main>
           
               <Title title={project.title} />
-              <h3>Linguagem: <span>{project.category}</span></h3>
+              <h3>Tecnologia: <span>{project.category}</span></h3>
               
             <div className="imgProject">
                 <h2>Página Inicial</h2>
