@@ -16,7 +16,8 @@ export default function Home() {
       <Head>
         <title>Portfólio Fábio Vitor</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" href="/favicon.ico" />
+        {//<link rel="icon" href="/favicon.ico" />
+        }
       </Head>
       <SeoConfig/>
       <div className="homepage">
