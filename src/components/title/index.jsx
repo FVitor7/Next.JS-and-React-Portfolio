@@ -14,7 +14,10 @@ export default function Title({title, url}) {
             <div className="TitleAndMore">
                 <h1 className="Title">{title}</h1>
                 <Link href={url}>
-                    <a><CgMoreR/></a>
+                    <a><span>Ver Mais</span></a>
+                    {
+                    //<a><CgMoreR/></a>
+                    }
                 </Link>
             </div>
         )
