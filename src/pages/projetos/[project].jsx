@@ -40,6 +40,16 @@ export default function Project({ project }) {
 
 
 
+export async function getStaticPaths() {
+  const paths = projects.map((project) => ({
+    params: { project: project.url.toString() },
+  }));
+  //console.log(paths)
+
+  return { paths, fallback: 'blocking' };
+};
+
+
 export async function getStaticProps({ params }) {
   const projectList = projects.filter(
     (p) => p.url.toString() === params.project);
