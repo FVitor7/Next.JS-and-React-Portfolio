@@ -1,10 +1,11 @@
-const withImages = require('next-images')
+//const withImages = require('next-images')
 
 module.exports =  {
+  /*
   ...withImages(),
     future: {
         webpack5: true,
-    },
+    },*/
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.node = {
