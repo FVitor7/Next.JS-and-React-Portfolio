@@ -13,8 +13,6 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-
-
 .projectsPage section a {
     overflow: hidden;
     border-radius: 0.5rem;
@@ -38,10 +36,10 @@
     flex-direction: column;
     border-radius: 0.5rem;
     transition: all 0.5s ease 0s;
-}:hover {
+}
+:hover {
     opacity: 1;
 }
-
 
 .projectsPage section a h1 {
     font-weight: 800;
@@ -68,13 +66,12 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .certificatesPage section {
+    .projectsPage section {
         grid-template-columns: 1fr 1fr;
     }
 }
 @media only screen and (max-width: 500px) {
-    .certificatesPage section {
+    .projectsPage section {
         grid-template-columns: 1fr;
     }
 }
-
