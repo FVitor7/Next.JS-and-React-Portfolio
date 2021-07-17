@@ -32,7 +32,7 @@
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    padding-top: 3.4rem;
+    
     -webkit-box-pack: center;
     justify-content: center;
     background: linear-gradient(180deg, #8257e6 0%, rgba(51, 51, 51, 0) 100%);
@@ -46,7 +46,8 @@
     opacity: 0;
     transition: all 0.5s ease 0s;
     color: #fff;
-    font-size: 0.6rem;
+    padding-top: 3rem;
+    font-size: .8rem;
 }
 
 .Skill svg {
@@ -63,12 +64,12 @@
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .Skill span {
-        font-size: 1.8rem;
-    }
-
     .Skill svg {
         width: 80px;
         height: 80px;
+    }
+    .Skill span {
+        padding-top: 5rem;
+    font-size: 2rem;
     }
 }
