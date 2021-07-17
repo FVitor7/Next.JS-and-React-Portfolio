@@ -23,8 +23,8 @@ export default function Certificates({ certificates }) {
                       <Image
                         src={item.image}
                         alt="Photo Certifier"
-                        height={595}
-                        width={800}
+                        height={390}
+                        width={600}
                       />
                       <style jsx global>{`
                         .divImgCertifiers {

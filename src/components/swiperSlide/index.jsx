@@ -52,8 +52,8 @@ function SwiperSlideFunction({ menuItem, urlSection }) {
                         <Image
                           src={item.image}
                           alt="Photo Swiper"
-                          height={595}
-                          width={800}
+                          height={390}
+                          width={500}
                         />
                         <style jsx global>{`
                           .divImgSwiper {

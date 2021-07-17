@@ -23,8 +23,8 @@ export default function Projects({ projects }) {
                       <Image
                         src={item.image}
                         alt="Photo Project"
-                        height={595}
-                        width={800}
+                        height={390}
+                        width={600}
                       />
                       <style jsx global>{`
                         .divImgProjects {
