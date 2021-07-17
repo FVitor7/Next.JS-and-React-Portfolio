@@ -8,18 +8,11 @@
   overflow: hidden;
   cursor: pointer;
   width: 16rem;
-  height: 18rem;
+  height: 14rem;
   transition: all 0.5s ease 0s;
   place-self: center;
   border-radius: 1.3rem;
   border: 3px solid #8257e6;
-}
-
-@media only screen and (min-width: 1000px) {
-  .swipeContainer .swiper-slide {
-    width: 14rem;
-    height: 16rem;
-  }
 }
 
 .swipeImages {
@@ -36,12 +29,9 @@
   }
   //background: url(https://images.prismic.io/gb-portfolio/5b62267d-9eee-40f8-b2fe-085585883b9d_Screenshot_6.png?auto=compress,format) center center / cover no-repeat;
 }
-.swipeImages img {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-}
-.swipeImages > div {
+
+
+.swipeImagesDiv1 {
   width: 100%;
   height: 100%;
   display: flex;
@@ -51,7 +41,7 @@
   }
 }
 
-.swipeImages > div div {
+.swipeImagesDiv2 {
   position: absolute;
   top: 0px;
   right: 0px;

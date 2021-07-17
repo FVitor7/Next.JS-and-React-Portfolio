@@ -13,13 +13,6 @@ export default function HeaderPage({ url_back }) {
                             <TiArrowBack />
                         </a>
                     </Link>
-                    {/*
-                <Link href="/">
-                    <a>
-                        <FaReact />
-                    </a>
-                </Link>
-                */}
                 </div>
             </header>
 
