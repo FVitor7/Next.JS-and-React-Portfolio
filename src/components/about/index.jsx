@@ -16,7 +16,7 @@ export default function About() {
                         Alem de utilizar Next.JS e React.JS para a construção dos meus projetos web.
 
                         Sou graduando em Matemática, e resido na cidade de Paulo Afonso na Bahia.
-                        Atualmente trabalhando como Auxiliar Administrativo na Horizont Estética Integrada e como Freelancer na plataforma 99freelas.
+                        Atualmente trabalhao como Desenvolvedor FullStack na empresa 9bits.
                 </p>
                 </div>
 
