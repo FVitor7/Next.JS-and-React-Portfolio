@@ -16,7 +16,7 @@ export default function About() {
                         Alem de utilizar Next.JS e React.JS para a construção dos meus projetos web.
 
                         Sou graduando em Matemática, e resido na cidade de Paulo Afonso na Bahia.
-                        Atualmente trabalho como Desenvolvedor FullStack na empresa 9bits.
+                        Atualmente trabalho como Desenvolvedor Full Stack na empresa 9bits.
                 </p>
                 </div>
 
