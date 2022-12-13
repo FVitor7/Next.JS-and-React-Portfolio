@@ -13,10 +13,17 @@ export default function HomePortfolio() {
                 <h2>Eu sou o <span>Fábio Vitor</span></h2>
                 <h4>
                     <Typical
-                        steps={['JavaScript & TypeScript', 1000,
-                            'Next.Js & React.Js', 1000,
-                            'Styled Components & Sass', 1000,
-                            'Django & Flask', 1000]
+                        steps={
+                            [
+                                'Desenvolvedor FullStack e FullCycle', 1000,
+                                'Python e TypeScript', 1000,
+                                'NestJS & Express', 1000,
+                                'Django, Flask & FastAPI', 1000,
+                                'MongoDB & PostgreSQL', 1000,
+                                'Next.Js & React.Js', 1000,
+                                'Styled Components & Sass', 1000,
+                                
+                            ]
                         }
                         loop={Infinity}
                         wrapper="p"
