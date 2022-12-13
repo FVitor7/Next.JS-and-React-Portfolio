@@ -15,7 +15,7 @@ export default function HomePortfolio() {
                     <Typical
                         steps={
                             [
-                                'Desenvolvedor FullStack e FullCycle', 1000,
+                                'FullStack e FullCycle', 1000,
                                 'Python e TypeScript', 1000,
                                 'NestJS & Express', 1000,
                                 'Django, Flask & FastAPI', 1000,
